@@ -6,4 +6,5 @@ The features included here are:
 - "Rooms" functionality
 - Ping functionality
 - Notifications for pings
+
 More will be added later
