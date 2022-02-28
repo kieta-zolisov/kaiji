@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <title>KAIJI :: Login</title>
+  </head>
+  <body>
+    <ui style="visibility: visible" id="loginmodal">
+      <ltxtitle>Kaiji</ltxtitle>
+      <ltxmain id="login_jss"> 0 javascript </ltxmain>
+      <input
+        type="text"
+        class="login_tbox"
+        style="display: block"
+        id="login_dispname"
+        placeholder="Display name"
+      />
+      <input
+        type="text"
+        class="login_tbox"
+        id="login_roomcode"
+        placeholder="Room code"
+      />
+      <button class="loginbt" id="login_submit">Submit</button>
+      <button class="loginbt" id="login_ntf">Notifications</button>
+      <div id="login_ntf_info" style="display: none">
+        <ltxtitleatt>Please read this first!</ltxtitleatt>
+        <br />
+        Kaiji, and any of my other projects will not abuse the notifications API
+        with malicious spam or phishing type content, you may check out the
+        source of this project itself in
+        <a href="https://glitch.com/~kaiji">Glitch</a>.<br />A notification
+        request has appeared at the top right, you may click the block button if
+        you disagree, but click the allow button otherwise. I respect your
+        choice and will not block certain features of this website if you choose to not
+        allow notifications.
+      </div>
+    </ui>
+    <ui style="visibility: hidden" id="chatui">
+      <div class="btbar">
+        <input type="text" id="chat_input" placeholder="type something..." />
+      </div>
+      <div id="chatarea"></div>
+      <div id="info">login screen</div>
+    </ui>
+    <!--KEEP AT BOTTOM-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
