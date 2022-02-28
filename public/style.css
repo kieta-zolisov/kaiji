@@ -1,0 +1,142 @@
+@keyframes blink {
+  0% {
+    color: white;
+  }
+  
+  100% {
+    color: #ffa600;
+  }
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #1D1D1D;
+  color: #cccccc;
+  overflow: hidden;
+}
+
+body {
+  position: absolute;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#loginmodal {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border: solid;
+  border-width: 1px;
+  border-color: #FFFFFF;
+  padding: 20px;
+  width: 40%;
+}
+
+mhe {
+  color: red;
+}
+
+smhe {
+  color: blue;
+}
+
+#info {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: #ffffff55;
+}
+
+.login_tbox{
+  border-color: white;
+  border: solid;
+  border-radius: 0px;
+  border-width: 2px;
+  font-size: 17px;
+  background: #00000000;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.login_tbox:hover {
+  background:#ffffff20
+}
+
+.login_tbox:active {
+  border-color: red;
+}
+
+.loginbt {
+  text-align: right;
+  border-color: white;
+  border: solid;
+  border-radius: 0px;
+  border-width: 2px;
+  font-size: 17px;
+  background: #00000000;
+  color: white;
+}
+
+.loginbt:hover {
+  background:#ffffff20
+}
+
+.loginbt:active {
+  border-color: red;
+}
+
+ltxtitle{
+  font-size: 60px;
+  display: block;
+  padding-bottom: 2px;
+  color: white;
+}
+
+ltxtitleatt {
+  font-size: 60px;
+  display: block;
+  padding-bottom: 2px;
+  color: white;
+  animation: 0.3s infinite alternate blink;
+}
+
+ltxmain {
+  display: block;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.btbar {
+  position: absolute;
+  width: 100%;
+  padding: 0px;
+  border-radius: 5px;
+  top: 0px;
+  background-color: #333333;
+}
+
+#chat_input {
+  background-color: #444444;
+  border: none;
+  font-size: 17px;
+  width: 99.3%;
+  border-radius: 5px;
+  margin: 0.25%;
+  color: white;
+}
+
+#chatarea {
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+message {
+  display: block;
+}
